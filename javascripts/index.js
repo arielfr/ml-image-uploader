@@ -94,8 +94,8 @@ $(document).ready(function () {
         console.log(i)
         $('#history tbody').append('<tr><td>' + history[i] + '</td><td><a href="history.html?id=' + history[i] + '">Ver Imagenes</a></td></tr>');
       }
-    }
 
-    $('#history').show();
+      $('#history').show();
+    }
   }
 });
