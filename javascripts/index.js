@@ -94,7 +94,6 @@ $(document).ready(function () {
 
     if (history) {
       for(var i = (history.length - 1); i >= 0; i--){
-        console.log(i)
         $('#history tbody').append('<tr><td>' + history[i] + '</td><td><a href="history.html?id=' + history[i] + '">Ver Imagenes</a></td></tr>');
       }
 
