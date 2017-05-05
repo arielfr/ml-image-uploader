@@ -43,6 +43,7 @@ $(document).ready(function () {
 
         appendResults(variations);
         saveOnHistory(data.id);
+        $('#history').hide();
       },
       complete: function () {
         $(progressBar).hide();
