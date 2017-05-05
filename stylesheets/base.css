@@ -1,0 +1,59 @@
+#header {
+    position: relative;
+    overflow: hidden;
+    background: #6f5499;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#header p {
+    font-size: 18px;
+    color: #cdbfe3;
+}
+
+#header .title {
+    float: left;
+}
+
+#header .title a {
+    color: inherit;
+}
+
+#header .github {
+    float: right;
+    background: transparent url(../images/github-button.png) 0 0 no-repeat;
+}
+
+#header .github a {
+    display: block;
+    width: 204px;
+    height: 80px;
+    padding-top: 22px;
+    padding-left: 68px;
+    font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
+    font-size: 23px;
+    line-height: 1.2;
+    color: #fff;
+    text-decoration: none;
+}
+
+#header .github a small {
+    display: block;
+    font-size: 11px;
+}
+
+#content {
+    padding-top: 20px;
+}
+
+footer {
+    border-top: 1px solid #CCCCCC;
+    margin-top: 20px;
+    padding-top: 15px;
+    text-align: center;
+}
+
+#history {
+    display: none;
+}

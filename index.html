@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+    <script src="javascripts/store.legacy.min.js"></script>
+    <script src="javascripts/index.js"></script>
+    <link rel="stylesheet" href="stylesheets/base.css"/>
+    <title>Mercadolibre Image Uploader</title>
+</head>
+<body>
+<div id="header" class="container-fluid">
+    <div class="title">
+        <h1>
+            <a href="index.html">Mercadolibre Image Uploader</a>
+        </h1>
+        <p><a href="http://developers.mercadolibre.com/working-with-pictures/" target="_blank">Upload images to
+            Mercadolibre</a></p>
+    </div>
+    <div class="github">
+        <a href="https://github.com/arielfr/ml-image-uploader" target="_blank">
+            <small>View Source code on</small>
+            Github
+        </a>
+    </div>
+</div>
+<div id="content" class="container-fluid">
+    <div class="row">
+        <div class="col-sm-6 col-xs-12">
+            <h4>Considerations & Best Practices</h4>
+            <p>RGB pictures are highly recommended over CMYK pictures.</p>
+            <p>There is um maximum imagens per item allowed to publish according to the category.</p>
+            <p>You’re allowed to upload pictures up to 10 MB in the following formats:</p>
+            <ul>
+                <li>JPG</li>
+                <li>JPGEG</li>
+                <li>PNG</li>
+                <li>not animated GIF</li>
+            </ul>
+        </div>
+        <div class="col-sm-6 col-xs-12">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <form id="image-uploader">
+                        <div class="form-group">
+                            <label for="access_token">Access Token</label>
+                            <input name="access_token" type="text" class="form-control" id="access_token"
+                                   placeholder="Access Token"
+                                   value="APP_USR-545545474996086-010315-d45aa2d8f8bb1ad9a75cec582842e235__LA_LB__-239656545"
+                                   required>
+                        </div>
+                        <div class="form-group">
+                            <label for="picture">Image</label>
+                            <input id="picture" name="picture" type="file" class="form-control" accept="image/*"
+                                   required>
+                        </div>
+                        <div class="progress" style="display: none;">
+                            <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="100"
+                                 aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                                <span class="sr-only"></span>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-default">Upload</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="results">
+    </div>
+    <div id="history">
+        <div class="panel panel-default">
+            <div class="panel-heading">History (Last First)</div>
+            <div class="panel-body">
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Link</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Manteiner: <a href="https://github.com/arielfr" target="_blank">Ariel Rey</a></p>
+    </footer>
+</div>
+</body>
+</html>
